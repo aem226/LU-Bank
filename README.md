@@ -1,5 +1,5 @@
-## LUBANK Project Walkthrough & Setup Guide
-# Overview
+# LUBANK Project Walkthrough & Setup Guide
+## Overview
 This project simulates a banking system that allows users to interact with various financial services through a Java-based interface connected to a SQL database. Key features include user authentication, account management, deposits, loans, card services, and investment tracking.
 
 ⚠️ Note: The system requires a live database connection. Without it, some features may not be visible or functional.
@@ -15,15 +15,15 @@ Once logged in, a menu will display options such as:
 - Checking
 - Savings
  
-# Investments
+## Investments
 
-Payments & Purchases
+- Payments & Purchases
 
-Deposits
+- Deposits
 
-Loans
+- Loans
 
-Cards
+- Cards
 
 As you navigate through the menu, your bank account details will become visible and interactive.
 
@@ -40,13 +40,13 @@ Upon successful login, you can:
 
 View balance
 
-# View transaction history
+## View transaction history
 
 To deposit:
 
-Select option 5 from the main menu.
+- Select option 5 from the main menu.
 
-Enter your Checking Number and Security ID again.
+- Enter your Checking Number and Security ID again.
 
 Input your deposit amount and a description.
 
@@ -59,9 +59,9 @@ Example Loan ID: 1234
 
 Choose either:
 
-Secured Loan
+- Secured Loan
 
-Unsecured Loan
+- Unsecured Loan
 
 Based on your selection, relevant loan information will be displayed.
 
@@ -74,43 +74,26 @@ For Credit Cards: Requires valid PIN (e.g., 08-112-2026)
 
 If incorrect PIN is entered, the system will prompt repeatedly until a valid one is provided.
 
-Once authenticated:
 
-A list of your cards will be displayed.
+## Project Requirements
+- .jar file
 
-Select the Card_ID to replace (use a hyphenated format, e.g., 234-567-8901).
+- .java source files
 
-The card will be successfully replaced.
+- .class compiled files
 
-Exit the card module.
+- .txt data files
 
-Investment
-Requires Client ID (PIN): 08-112-2026
+## Key Features
+- Java + SQL integration
 
-Savings
-Requires Account ID: 12-34-67
+- Real-time input and response handling
 
+- Authentication and validation
 
-# Project Requirements
-.jar file
+- Error handling for invalid input and logic flows
 
-.java source files
+## Compilation & Execution:
 
-.class compiled files
-
-.txt data files
-
-# Key Features
-Java + SQL integration
-
-Real-time input and response handling
-
-Authentication and validation
-
-Error handling for invalid input and logic flows
-
-Compilation & Execution
-Compile Java File:
-javac LUBank.java
-Run Java Program with Oracle JDBC Driver:
-java -cp .:aem226.jar LUBank
+Run Java Program with Oracle JDBC Driver:   
+- java -cp .:aem226.jar LUBank
