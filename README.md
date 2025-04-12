@@ -1,147 +1,116 @@
-# Project Title
+## LUBANK Project Walkthrough & Setup Guide
+# Overview
+This project simulates a banking system that allows users to interact with various financial services through a Java-based interface connected to a SQL database. Key features include user authentication, account management, deposits, loans, card services, and investment tracking.
 
-## LU BANK
+⚠️ Note: The system requires a live database connection. Without it, some features may not be visible or functional.
 
+Bank Manager Login
+The Bank Manager can insert a designated PIN to access backend functionalities.
 
+Customer Login
+Example PIN: 08-112-2026 (used throughout this walkthrough)
 
+Once logged in, a menu will display options such as:
 
-WALKTHROUGH:
+- Checking
+- Savings
+ 
+# Investments
 
-Bank Manger insert given pin 
+Payments & Purchases
 
+Deposits
 
-This project allows users to interact with a Bank utilzing a database 
+Loans
 
-For Costumer Login
-PIN : 08-112-2026
+Cards
 
-A menu will display of checking, saving, investment, payments and purchases, deposits,
-loans, and cards. 
-As you get deeper into the menu you will see your Bank account come to life. 
- Checking Account: 
- Extra security is important, you need two authentications in order to see your balance and transactions.
+As you navigate through the menu, your bank account details will become visible and interactive.
 
-If you selected Costumer PIN 08-112-2026
-Checking number  = 12345678
-Security ID = 817234
+Checking Account
+Enhanced Security: Requires two-step authentication.
 
-Once your signed in you will see your checking account balance and transaction history.
-If you want to deposit into your account select 5:
-Your Check number and Security is previously assigned.
-Checking number  = 12345678
-Security ID = 817234
+PIN: 08-112-2026
 
-Enter your deposit and a little discription of want you want to deposit.
-Once your deposit is successful, go back to your checking account to view the change, after oauth of course.
-There you will see your deposit and adjusted balance!
+Checking Number: 12345678
 
-If you selected Secured & Unsecured loans
-it will ask you if you would like to sign up for a loan 
-The LOAN_ID will be 1234 and then ask you to select the secured or unsecured loan and present you with the following information based upon your input.
+Security ID: 817234
 
-If you was a new or replace or view debit/credit card, you will be
-asked to enter your checking account id.
-For debit card it will ask for your check id which is 1234678
-For credit card it will ask for your pin which will be  08-112-2026, you have to 
-enter the correct pin otherwise it will keep asking you 
+Upon successful login, you can:
 
-It will ask you what card you will like to replace and display all the credit card or debit cards you own.
-Once you select your specifc Card_ID , you have to add  "-", and then once you click on the card_id you want to 
-replace, it will successfully replace it. Then you exit it out. 
+View balance
 
+# View transaction history
 
-If you seleted investment, you will need the client id (pin) which is 08-112-2026
-If you select saving it will ask for your client_id which is account_id which is 12-34-67
+To deposit:
 
+Select option 5 from the main menu.
 
+Enter your Checking Number and Security ID again.
 
-##Instrunctions 
-Make sure everythign is the LUBANK folders when compiling 
-The followng costumer login pin
-Account ID
-08-112-2026
-78-010-2464
-57-376-5546
-53-353-3498
-15-739-4787
-75-497-9099
+Input your deposit amount and a description.
 
-Check_ ID
+After successful submission, return to the checking account view (with re-authentication) to see your updated balance.
 
-12345678
-23456789
-34567890
-45678901
-56789012
-67890123
-78901234
+Loans (Secured & Unsecured)
+System prompts to apply for a loan.
 
+Example Loan ID: 1234
 
-Loan ID
+Choose either:
 
-9901
-9012
-8901
-8890
-7890
-7789
-6789
+Secured Loan
 
+Unsecured Loan
 
-PIN //Credit card
+Based on your selection, relevant loan information will be displayed.
 
-08-112-2026
-78-010-2464
-57-376-5546
-53-353-3498
-15-739-4787
-75-497-9099
-30-914-9245
-05-130-6785
+Credit & Debit Cards
+To replace or view cards, enter your checking account ID.
 
-Card_id  //debitcard
-164-785-1562
-234-567-8901
-345-678-9012
-456-789-0123
-567-890-1234
-678-901-2345
-789-012-3456
-890-123-4567
-check_id
-12345678
-23456789
-34567890
-45678901
-56789012
-67890123
-78901234
-89012345
+For Debit Cards: Requires Check ID = 12345678
+
+For Credit Cards: Requires valid PIN (e.g., 08-112-2026)
+
+If incorrect PIN is entered, the system will prompt repeatedly until a valid one is provided.
+
+Once authenticated:
+
+A list of your cards will be displayed.
+
+Select the Card_ID to replace (use a hyphenated format, e.g., 234-567-8901).
+
+The card will be successfully replaced.
+
+Exit the card module.
+
+Investment
+Requires Client ID (PIN): 08-112-2026
+
+Savings
+Requires Account ID: 12-34-67
 
 
+# Project Requirements
+.jar file
 
+.java source files
 
+.class compiled files
 
+.txt data files
 
+# Key Features
+Java + SQL integration
 
+Real-time input and response handling
 
+Authentication and validation
 
+Error handling for invalid input and logic flows
 
-
-
-
-
-## Requirements
- - jar file
- - .java file
- - .class file
- - .txt file
-
- ## Features
- - Use SQL to show use input
- - Utilizing java to make the corrected format
- - Error Handeling 
-
- ## How to compile & Files needed
- - javac Capacity.java
- - java -cp .:ojdbc11.jar Capacity
+Compilation & Execution
+Compile Java File:
+javac LUBank.java
+Run Java Program with Oracle JDBC Driver:
+java -cp .:aem226.jar LUBank
