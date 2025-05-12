@@ -98,5 +98,5 @@ If incorrect PIN is entered, the system will prompt repeatedly until a valid one
 Run Java Program with Oracle JDBC Driver:   
 - java -cp .:aem226.jar LUBank
 
-  ##ERD DIAGRAM
+## ERD DIAGRAM
 ![image](https://github.com/user-attachments/assets/70ccc8bf-7ec6-48e8-b908-2a83745ee692)
